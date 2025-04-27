@@ -1,19 +1,23 @@
 # A Simple Flask API 
 # Step 1 is pip install flask
  
-
-from flask import Flask
+# Render Template will tell flask to look in templates folder for exact .html file
+from flask import Flask,render_template
 # This will protect us from injections 
 from markupsafe import escape
 app = Flask(__name__)
 
 @app.route('/')
 def base():
-    return "<h1>Hello From Flask"
+    return render_template('Home.html')
 
-@app.route('/home')
+@app.route('/about')
 def Home():
-    return "<h1>I am Home page</h1>"
+    return render_template('About.html')
+
+@app.route('/contact')
+def Contact():
+    return render_template('Contact.html')
 
 @app.route('/<name>')
 def NamePage(name):
