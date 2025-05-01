@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: python setup.py && gunicorn app:app
