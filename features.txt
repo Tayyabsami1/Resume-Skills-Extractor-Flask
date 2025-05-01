@@ -1,0 +1,6 @@
+AI-powered job recommendations based on resume analysis and past applications.
+Automatic skill extraction from resumes using Natural Language Processing (NLP).
+Job matching algorithm that ranks candidates based on skills, experience, and job fit.
+Dynamic resume recommendations for applicants based on trending industry demands.
+
+AI Chatbot for job search assistance.

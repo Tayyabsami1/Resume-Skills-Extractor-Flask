@@ -1,2 +1,7 @@
 Flask
 gunicorn
+flask_cors
+nltk
+spacy
+PyPDF2
+Werkzeug
