@@ -24,7 +24,7 @@ import os
 # Initialize Flask app
 app = Flask(__name__)
 # Enable CORS for all routes
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 # Configure upload folder
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max upload
